@@ -1,153 +1,23 @@
-import ProjectData from '@/data/ProjectData.ts'
+import ProjectData from "@/data/ProjectData.ts";
 
 export default [
-    new ProjectData("project-1", "Optimistic Chubby", "img/projects/project-1-icon.png", 
-    `
-    <div class="paragraph">
-     <strong>Optimistic Chubby</strong> is a thing of beauty that I am so proud of. It's available on Android because why not.
-     <br/>Image by <a href="https://www.pexels.com/fr-fr/@knownasovan" target="_blank">OVAN</a>.
-    </div>
-    <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="paragraph center">
-        <a href="https://play.google.com/store/apps/details?id=some.playstore.thing" target="_blank"><img src="img/projects/play-store-logo.png" alt="Play Store badge" /></a>
-    </div>
+  new ProjectData("zombie-slot-game", "Zombie Slot Game", "img/projects/zombie-thumbnail.png", `
+    <p>Immersive multi-reel slot with dynamic paylines, scatter bonuses, free spins, and horror-themed VFX.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RubElttzOaU" title="Zombie Slot Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  `, "#ff3f3f", false, false, [
+    new ProjectData("project-v1", "Zombie Slot Game Demo", "img/projects/zombie-thumbnail.png", "", "#ff3f3f", false, false),
+  ]),
 
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
+  new ProjectData("vegas-empire", "Vegas Empire", "img/projects/vegas-thumbnail.png", `
+    <p>Casino empire builder with interactive UI, progressive bonuses, and high-performance reel mechanics.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BsKxrJxeV6E" title="Vegas Empire" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  `, "#ff3f3f", false, false, [
+    new ProjectData("project-v1", "Vegas Empire Demo", "img/projects/vegas-thumbnail.png", "", "#ff3f3f", false, false),
+  ]),
 
-    <div class="paragraph center">
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
-    </div>
-    `, "#23bd69", true),
-    new ProjectData("project-2", "Singing Addict", "img/projects/project-2-icon.png", `
-    <div class="paragraph">
-        <strong>Optimistic Chubby Blog</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@adonyi-gabor-604571">Adonyi Gábor</a>.
-    </div>
-    <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-    <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code is available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
-    </div>
-    </div>
-
-    <div class="paragraph center">
-    <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
-    <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
-    <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
-    <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
-    </div>
-    `, "#5a78af"),
-    new ProjectData("project-3", "Drawing Overload", "img/projects/project-3-icon.png", `
-    <div class="paragraph">
-        <strong>Drawing Overload</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@miphotography">Miesha Maiden</a>.
-    </div>
-    <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Playable in the browser (WebGL) on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code is available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
-        </div>
-    </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
-    </div>
-    `, "#383838"),
-    new ProjectData("project-4", "Eugeneable", "img/projects/project-4-icon.png", `
-    <div class="paragraph">
-    <strong>Eugeneable</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-    <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
-    </div>
-    
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        </div>
-    </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-    </div>
-    `, "#e80fb7"),
-    new ProjectData("project-5", "Cloud Drew Land", "img/projects/project-5-icon.png", `
-    <div class="paragraph">
-        <strong>Cloud Drew Land</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@cottonbro">cottonbro</a>.
-    </div>
-    
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
-        </div>
-    </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-    </div>`, "#e48246")
+  new ProjectData("new-project", "New Project", "img/projects/coming-soon-thumbnail.png", `
+    <p>Coming Soon — Next-gen multiplayer or advanced slot experience in development.</p>
+  `, "#ff3f3f", false, false, [
+    new ProjectData("project-v1", "Coming Soon", "img/projects/coming-soon-thumbnail.png", "", "#ff3f3f", false, false),
+  ]),
 ];
